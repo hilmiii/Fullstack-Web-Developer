@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftarkan diri Anda</title>
+    <!-- RIZKY HILMIAWAN ANGGORO
+    0110222140 -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #28a745;
+            padding: 0.1rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ffff;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .gender-options {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .gender-options label {
+            font-weight: normal;
+        }
+
+        .terms {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 600px) {
+            form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>DAFTAR</h1>
+    </div>
+    <br>
+
+    <form action="" method="POST">
+        <!-- Nama Lengkap -->
+        <label for="fullname">Nama Lengkap</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="Masukkan Nama Lengkap Anda">
+
+        <!-- Email -->
+        <label for="email">E-Mail</label>
+        <input type="email" id="email" name="email" required placeholder="Masukkan E-Mail Anda">
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Masukkan Password Anda">
+
+        <!-- Tanggal Lahir -->
+        <label for="tanggal-lahir">Tanggal Lahir</label>
+        <input type="date" name="tanggal-lahir" id="tanggal-lahir" required>
+
+        <!-- Umur -->
+        <label for="umur">Umur</label>
+        <input type="number" id="umur" name="umur" required placeholder="Masukkan Umur Anda" min="18">
+
+        <!-- Jenis Kelamin -->
+        <label>Jenis Kelamin</label>
+        <div class="gender-options">
+            <label><input type="radio" name="gender" value="male"> Laki-laki</label>
+            <label><input type="radio" name="gender" value="female">Perempuan</label>
+        </div>
+
+        <!-- Nomor Telpon -->
+        <label for="telp">Nomor Telepon</label>
+        <input type="tel" id="telp" name="telp" required placeholder="Masukkan Nomor Telepon Anda">
+
+        <!-- Foto Profil -->
+        <label for="files">Foto Profil</label>
+        <input id="file" type="file" accept="image/*">
+
+        <!-- Persetujuan syarat & ketentuan -->
+        <div class="terms">
+            <label for="terms">
+                <input type="checkbox" name="terms" id="terms" required> Saya Setuju dengan Syarat dan Ketentuan
+            </label>
+        </div>
+
+        <!-- Tombol Submit -->
+        <button type="submit">Daftar</button>
+    </form>
+</body>
+</html>
