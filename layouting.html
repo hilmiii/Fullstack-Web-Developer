@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        background: #f1f1f1;
+    }
+
+    .header {
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+    }
+
+    .header h1 {
+        font-size: 50px;
+    }
+
+    .nav {
+        overflow: hidden;
+        background-color: #969696;
+        text-align: center;
+    }
+
+    .nav a {
+        display: inline-block;
+        color: #f2f2f2;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .nav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr; 
+        grid-gap: 10px;
+        margin-top: 10px;
+    }
+
+    .leftcolumn {
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+
+    .midcolumn {
+        background-color: white;
+        padding: 20px;
+    }
+
+    .rightcolumn {
+        background-color: #f1f1f1;
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background-color: #ddd;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .row {
+            grid-template-columns: 1fr; 
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+        .nav a {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <div class="header">    
+        <h1>HEADER</h1>
+    </div>
+    <div class="nav">
+    <a href="">NAVIGATION MENU</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+        <div class="card">
+            <h2>CONTENT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore facere suscipit aut, commodi numquam beatae deserunt ea consectetur veritatis aliquid architecto sint autem doloribus! Eligendi itaque nostrum incidunt soluta ex et, id voluptatum placeat aliquam ipsam enim repellat culpa voluptates illo! Soluta ex eius a. Est recusandae sunt inventore perferendis!</p>
+            </div>
+        </div>
+    
+        <div class="midcolumn">
+        <div class="card">
+            <h2>MAIN CONTENT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium vel fugit sapiente unde. Molestiae possimus ea odit nesciunt optio magni animi, ad praesentium, neque fuga aliquam sequi temporibus officiis? Incidunt veniam quas aperiam modi quam, voluptatem quis magnam delectus similique rerum quibusdam! Reiciendis odio voluptate debitis ad earum exercitationem dolores iusto facilis cumque voluptatem magni voluptatum officiis vitae, magnam nemo doloribus molestias, nostrum harum. Minima dicta quam ratione obcaecati. Saepe, dolore expedita. Laboriosam magnam assumenda nobis iure eos vero fuga tempora pariatur. Veniam placeat dicta temporibus est ea. Dignissimos earum numquam non asperiores provident voluptatum minima quae nostrum, sequi in..</p>
+        </div>
+        </div>
+    
+        <div class="rightcolumn">
+            <h2>CONTENT</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus eos inventore quae optio nobis ullam sit cumque alias explicabo harum iste culpa hic autem fugiat assumenda, illo velit facilis laudantium pariatur deserunt aperiam voluptates id magni? Necessitatibus eveniet, veritatis error soluta doloribus nemo cumque mollitia, magni consequatur odio aspernatur?</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <h2>FOOTER</h2>
+    </div>
+</body>
+</html>
